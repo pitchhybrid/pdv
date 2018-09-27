@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDV</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <hr class="my-5">
+        <hr class="my-3">
+        <div class="row">
+            <div class="col-sm-2">
+                <p class="display-4" style="font-size:2rem;">PDV Lista</p>
+            </div>
+            <div class="col-sm">
+                <input type="date" name="data">
+            </div>
+
+        </div>
+        <hr class="my-2">
+        <form action="#">
+            <div class="row">
+                <div class="col-sm-1">
+                    <label for="entradaProduto" class="display-4" style="font-size: 1.5rem;">Produto:</label>
+                </div>
+
+                <div class="col-8">
+                    <input type="text" class="form-control ">
+
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary">Adicionar</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="carrinho my-4">
+            <ul>
+
+            </ul>
+
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+</body>
+
+</html>
