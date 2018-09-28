@@ -33,28 +33,30 @@
                 </div>
 
                 <div class="col-8">
-                    <input type="text" class="form-control ">
+                    <input id="prod" type="text" class="form-control">
 
                 </div>
                 <div class="col">
-                    <input type="number" class="form-control">
+                    <input id="qtd" type="number" class="form-control">
                 </div>
                 <div class="col">
-                    <button class="btn btn-primary">Adicionar</button>
+                    <button class="btn btn-primary" onclick="insereLista();">Adicionar</button>
                 </div>
             </div>
         </form>
-
-        <div class="carrinho my-4">
-            <ul>
-
-            </ul>
-
-        </div>
     </div>
+
+    <div class="carrinho my-1">
+
+        <ul id="sacola">
+
+        </ul>
+    </div>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
