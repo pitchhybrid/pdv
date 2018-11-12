@@ -1,28 +1,28 @@
-let produtos = [];
+var produtos = [];
 
 
 function insereLista() {
     let qtd = $("#qtd");
     let prod = $("#prod");
     produtos.push({
-        produtoNome : prod.val(),
-        quantidade : qtd.val(),
-        preco : Math.round((Math.random()*100)+1)
+        produtoNome: prod.val(),
+        quantidade: qtd.val(),
+        preco: Math.round((Math.random() * 100) + 1)
     });
 
     atualizarCarrinho();
 }
 
-function deleteById(id){
-   
-    produtos = produtos.filter((e,i)=>{
+function deleteById(id) {
+
+    produtos = produtos.filter((e, i) => {
         return i != id;
     })
-console.log(produtos)
-atualizarCarrinho();
+    console.log(produtos)
+    atualizarCarrinho();
 }
 
-function atualizarCarrinho(){
+function atualizarCarrinho() {
     const carrinho = $("#sacola");
     const total = $("#total");
 
@@ -30,17 +30,22 @@ function atualizarCarrinho(){
     let valorTotal = 0;
     for (let index = 0; index < produtos.length; index++) {
         const produto = produtos[index];
-        valorTotal += produto.preco*produto.quantidade;
+        valorTotal += produto.preco * produto.quantidade;
         html += `<tr>
-            <td>${produto.produtoNome}</td> 
-            <td>${produto.quantidade}</td> 
+            <td>${produto.produtoNome}</td>
+            <td>${produto.quantidade}</td>
             <td>${produto.preco}</td>
             <td><button class="btn btn-primary" onclick="deleteById(${index})"><i class="far fa-trash-alt"></i></button></td>
-            </tr>`
+            </tr>`;
     }
-    total.html("R$"+valorTotal)
+    total.html("R$" + valorTotal);
     carrinho.html(html);
 }
 
-func
-
+$('#login').click(function() {
+            $user = $('#user');
+            $pass = $('#senha');
+            if ($user.val() == '') {
+                    alert('campos vazios');
+                }
+            });
