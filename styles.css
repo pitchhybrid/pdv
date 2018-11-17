@@ -13,3 +13,16 @@
     padding: 5%;
     box-shadow: 5px 5px 5px 5px #0000003f;
 }
+
+/*--------------Tela Cadastro de Produtos---------------*/
+.tela-cadastro-produto{
+    margin-top: 8%;
+}
+
+.card-header{
+    background-color: #fff;
+}
+
+.conteiner-card{
+    height:530px;
+}

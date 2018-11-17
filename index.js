@@ -42,10 +42,24 @@ function atualizarCarrinho() {
     carrinho.html(html);
 }
 
-$('#login').click(function() {
-            $user = $('#user');
-            $pass = $('#senha');
-            if ($user.val() == '') {
-                    alert('campos vazios');
-                }
-            });
+$('#login').click(function () {
+    $user = $('#user');
+    $pass = $('#senha');
+    if ($user.val() == '') {
+        alert('campos vazios');
+    }
+});
+
+
+// ----------------- JS Cadastro de Produtos ----------/
+
+$(document).ready(function(){
+    $("#btn-cad-prod").click(function(){
+     $("#recebe_nome_prod").append($("#nome_prod").val());
+     $("#recebe_qnt_prod").append($("#qnt_prod").val());
+     $("#recebe_cod_prod").append($("#cod_prod").val());
+     $("#recebe_img_prod").append($("#arq").val());
+    });
+
+});
+

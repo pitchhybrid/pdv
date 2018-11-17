@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de clientes</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+</head>
+
+<body class="bg-info">
+
+    <div class="container tela-cadastro-produto">
+        <div class="row">
+            <div class="col-md">
+                <div class="container">
+                    <div class="card conteiner-card">
+                        <div class="card-header text-center">
+                            <h3>Cadastrar Produto</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label>Nome de Produto:</label>
+                                    <input class="form-control" type="text" id="nome_prod">
+                                    <br>
+                                    <label>Quantidade:</label>
+                                    <input class="form-control" type="number" id="qnt_prod">
+                                    <br>
+                                    <label>Código:</label>
+                                    <input class="form-control" type="text" id="cod_prod">
+                                    <br>
+                                    <input type="file" class="form-control-file border" id="arq">
+                                </div>                                         
+                            </form>
+                            <br>
+                            <button class="btn btn-primary" id="btn-cad-prod">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card conteiner-card">
+                    <div class="card-header text-center">
+                        <h3>Produto Cadastrado</h3>
+                    </div>
+                    <div class="card-body">
+                            <h5 id="recebe_nome_prod" ><strong>Produto: </strong></h5>
+                            <h5 id="recebe_qnt_prod"><strong>Quantidade: </strong></h5>
+                            <h5 id="recebe_cod_prod"><strong>Código: </strong></h5>
+                            <img src="" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
