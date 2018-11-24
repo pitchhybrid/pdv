@@ -56,7 +56,7 @@ $(document).ready(function() {
 });
 
 $("#finalizar").click(function() {
-    $.post("callback.php", function() {
+    $.post("callback.php", function(html) {
         html;
     });
 });

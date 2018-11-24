@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
 <?php
+//carregar tema
 include('./tema/tema.php');
 cabecalho("Login");
 ?>

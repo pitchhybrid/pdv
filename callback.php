@@ -1,5 +1,5 @@
 <?php
-include('mock.php');
+require('mock.php');
 $login = $_POST['user'];
 $pass = $_POST['pass'];
 

@@ -1,28 +1,47 @@
-.carrinho {
-    border: 1px solid #CECECE;
-    margin: 0;
-}
-.login{
+.login {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 50%;
 }
-.card{
+
+.carrinho-tabela {
+    height: 700px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.card {
     padding: 5%;
     box-shadow: 5px 5px 5px 5px #0000003f;
 }
 
+
 /*--------------Tela Cadastro de Produtos---------------*/
-.tela-cadastro-produto{
+
+.tela-cadastro-produto {
     margin-top: 8%;
 }
 
-.card-header{
+.card-header {
     background-color: #fff;
 }
 
-.conteiner-card{
-    height:530px;
+.conteiner-card {
+    height: 530px;
+}
+
+.carrinho-tabela::-webkit-scrollbar {
+    width: 12px;
+}
+
+.carrinho-tabela::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.carrinho-tabela::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: gold;
 }
