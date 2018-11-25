@@ -3,7 +3,7 @@
 <head>
    <?php
    include("./tema/tema.php");
-   cabecalho("Produtos");
+   cabecalho("Clientes");
    ?>
 </head>
 <body class="bg-muted">

@@ -12,13 +12,15 @@
         <div class="row">
 
             <div class="card mr-5" style="width:16rem;">
-               <p class="display-4 ml-4" style="font-size:1.5rem">Cadastrar <br>
-                Produtos<br></p> 
+               <p class="display-4 ml-4" style="font-size:1.5rem">
+               Cadastrar Produtos
+               </p> 
                 <a class ="btn btn-primary" href="./cadproduto.php">&nbsp</a>
             </div>
             <div class="card" style="width:16rem;">
-               <p class="display-4 ml-4" style="font-size:1.5rem">Listar <br>
-                Produtos<br></p> 
+               <p class="display-4 ml-4" style="font-size:1.5rem">
+               Listar Produtos
+               </p> 
                 <a class ="btn btn-primary" href="./mock.php">&nbsp</a>
             </div>
         </div>
