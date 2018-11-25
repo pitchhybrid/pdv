@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
 <?php
 include('./tema/tema.php');
 cabecalho("Carrinho");
 ?>
+
 </head>
 <?php navbar(); ?>
 
@@ -42,7 +44,7 @@ cabecalho("Carrinho");
         </div>
 
         <div class="row carrinho my-4 ml-5">
-            <div class="col-sm-10 carrinho-tabela">
+            <div class="col-10 carrinho-tabela">
                 <table class=" ml-4 table table-dark table-striped">
                     <thead>
                         <tr>
@@ -57,7 +59,7 @@ cabecalho("Carrinho");
                     </tbody>
                 </table>
             </div>
-            <div class="col-sm-2">
+            <div class="col-2">
                 <input class="btn btn-danger" type="submit" value="Finalizar"><br>
                 <span style="font-size: 2rem;" class="text-dark display-4" id="total">R$ 0,00</span>
             </div>
@@ -66,8 +68,6 @@ cabecalho("Carrinho");
     </div>
 </body>
 <footer>
-<?php
-rodape();
-?>
+<?php rodape(); ?>
 </footer>
 </html>

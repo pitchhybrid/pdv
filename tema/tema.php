@@ -28,15 +28,9 @@ function rodape(){
 function navbar(){
     ?>
     <!--Nav-Bar-->
-        <header class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <header class="navbar navbar-expand-lg navbar-dark bd-navbar">
 
-            <a class="navbar-brand h1 mb-0" href="#">PDV </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-
-            <div class="collapse navbar-collapse " id="navbarsite">
+            <a class="navbar-brand" href="#">PDV </a>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="./dashboard.php">Home</a>
