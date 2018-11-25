@@ -23,3 +23,35 @@ function rodape(){
     <?php
 }
 ?>
+
+<?php
+function navbar(){
+    ?>
+    <!--Nav-Bar-->
+        <header class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <a class="navbar-brand h1 mb-0" href="#">PDV </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse " id="navbarsite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrinho.php">Carrinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./produto.php">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clientes.php">Clientes</a>
+                    </li>
+                </ul>
+        </header>
+<?php
+}
+?>

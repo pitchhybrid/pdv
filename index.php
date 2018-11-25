@@ -8,19 +8,21 @@ cabecalho("Login");
 ?>
 </head>
 
-<body class="bg-info">
+<body class="bg-muted">
     <div class="container login">
         <div class="card">
             <form action="./callback.php" method="post">
-                <div class="form-group">
-                    <label>Login:</label>
-                    <input class="form-control" type="text" id="user" name="user">
-                    <small id="emailHelp" class="form-text text-muted">nome de usuario.</small>
-                    <label>Senha:</label>
-                    <input class="form-control" type="password" id="senha" name="pass">
-                    <small id="emailHelp" class="form-text text-muted">senha de 8 digitos</small>
+                <div class="form-group display-4" style="font-size:1.5rem;">
+                    <label class="my-4">Login:</label>
+                    <input required class="form-control" type="text" id="user" name="user">
+            
+                    <label class="my-4">Senha:</label>
+                    <input required class="form-control" type="password" id="senha" name="pass">
+                    
+                    <div class="my-3">
+                    <a class="btn btn-warning mr-4" href="./cadastroCliente.php">cadastro</a>
                     <button class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i></button>
-                    <a class="btn btn-warning" href="./cadastroCliente.php">cadastro</a>
+                    </div>
                 </div>
         </div>
         </form>

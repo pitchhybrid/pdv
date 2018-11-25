@@ -6,20 +6,21 @@ include('./tema/tema.php');
 cabecalho("Cadastro Cliente");
 ?>
 </head>
-<body class="bg-info">
+
+<body class="bg-muted">
     <div class="container login">
         <div class="card">
             <form action="# " method="post">
-                <div class="form-group">
+                <div class="form-group display-4" style="font-size:1.3rem">
                     <label>nome de usuario:</label>
-                    <input class="form-control" type="text" id="user">
-                    <small id="emailHelp" class="form-text text-muted">nome de usuario</small>
+                    <input class="form-control my-2" type="text" id="user">
+                   
                     <label>senha:</label>
-                    <input class="form-control" type="password" id="senha">
-                    <small id="emailHelp" class="form-text text-muted">senha de 8 digitos</small>
+                    <input class="form-control my-2" type="password" id="senha">
+                   
                     <label>confirmar senha:</label>
-                    <input class="form-control" type="password" id="senha">
-                    <small id="emailHelp" class="form-text text-muted">senha de 8 digitos</small>
+                    <input class="form-control my-2" type="password" id="senha">
+                    
                 </div>
                 <button class="btn btn-primary">Cadastrar</button>
         </div>

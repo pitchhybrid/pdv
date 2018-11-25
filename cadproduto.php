@@ -3,11 +3,11 @@
 <head>
 <?php
 include('./tema/tema.php');
-cabecalho("login");
+cabecalho("Cadastro Produto");
 ?>
 </head>
-
-<body class="bg-info">
+<?php navbar(); ?>
+<body class="bg-muted">
 
     <div class="container tela-cadastro-produto">
         <div class="row">

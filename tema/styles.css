@@ -9,12 +9,11 @@
 .carrinho-tabela {
     height: 700px;
     max-height: 100%;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .card {
     padding: 5%;
-    box-shadow: 5px 5px 5px 5px #0000003f;
 }
 
 
@@ -22,6 +21,12 @@
 
 .tela-cadastro-produto {
     margin-top: 8%;
+}
+
+.tela-cadastro-cliente {
+    margin-top: 3%;
+    margin-left: 23%;
+    margin-bottom: 5%;
 }
 
 .card-header {
@@ -43,5 +48,9 @@
 
 .carrinho-tabela::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: gold;
+    background-color: black;
+}
+
+.bg-muted {
+    background-color: #f4f4f4
 }
