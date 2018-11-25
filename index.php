@@ -19,8 +19,7 @@ cabecalho("Login");
                     <label class="my-4">Senha:</label>
                     <input required class="form-control" type="password" id="senha" name="pass">
                     
-                    <div class="my-3">
-                    <a class="btn btn-warning mr-4" href="./cadastroCliente.php">cadastro</a>
+                    <div class="my-3 float-right">
                     <button class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i></button>
                     </div>
                 </div>
