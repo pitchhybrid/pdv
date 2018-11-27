@@ -26,26 +26,32 @@ cabecalho("Carrinho");
         </div>
         <hr class="my-5">
 
-        <div class="row mr-4">
-            <div class="col-sm-1">
-                <label for="entradaProduto" class="display-4 text-dark" style="font-size: 1.5rem;">Produto:</label>
-            </div>
+        <div class="row">
 
-            <div class="col-8">
+            <div class="col-5">
+                <p class="display-4 text-dark" style="font-size: 1.5rem;">Produto:</p>
                 <input required id="prod" type="text" class="form-control">
-
             </div>
             <div class="col">
+                <p class="display-4 text-dark" style="font-size: 1.5rem;">Quantidade:</p>
                 <input required id="qtd" type="number" min="1" value="1" class="form-control">
             </div>
             <div class="col">
+                <p class="display-4 text-dark" style="font-size: 1.5rem;">Valor:</p>
+                <input required id="valor" type="text" min="1" value="1" class="form-control">
+            </div>
+            <div class="col">
                 <button class="btn btn-primary" onclick="insereLista();">Adicionar</button>
+                <div class="my-2">
+                <input class="btn btn-danger" id="finalizar" type="submit" value="Finalizar">
+                <span style="font-size: 2rem;" class="text-dark display-4 float-right" id="total">R$ 0,00</span>
+                </div>
             </div>
         </div>
 
-        <div class="row carrinho my-4 ml-5">
-            <div class="col-10 carrinho-tabela">
-                <table class=" ml-4 table table-dark table-striped">
+        <div class="row carrinho my-4">
+            <div class="col-11 carrinho-tabela">
+                <table class="table table-dark table-striped">
                     <thead>
                         <tr>
                             <th width="60%">Produto</th>
@@ -58,10 +64,6 @@ cabecalho("Carrinho");
 
                     </tbody>
                 </table>
-            </div>
-            <div class="col-2">
-                <input class="btn btn-danger" type="submit" value="Finalizar"><br>
-                <span style="font-size: 2rem;" class="text-dark display-4" id="total">R$ 0,00</span>
             </div>
         </div>
 

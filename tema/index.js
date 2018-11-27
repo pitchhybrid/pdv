@@ -4,10 +4,11 @@ var produtos = [];
 function insereLista() {
     let qtd = $("#qtd");
     let prod = $("#prod");
+    let valor = $("#valor");
     produtos.push({
         produtoNome: prod.val(),
         quantidade: qtd.val(),
-        preco: Math.round((Math.random() * 100) + 1)
+        preco: valor.val()
     });
 
     atualizarCarrinho();
@@ -56,7 +57,8 @@ $(document).ready(function() {
 });
 
 $("#finalizar").click(function() {
-    $.post("callback.php", function(html) {
-        html;
-    });
+    $.post('teste.php', {...produtos },function () {
+     console.log({...produtos});
+    },'json');
+
 });

@@ -15,23 +15,23 @@ cabecalho("Cadastro Clientes");
                 <h3>Cadastrar Cliente</h3>
             </div>
             <div class="card-body">
-                <form action="#" method="post">
+                <form action="mock.php" method="post">
                     <div class="form-group">
                         <label>Código:</label>
                         <button class="btn btn-primary float-right">Cadastrar</button>
-                        <input class="form-control w-25" type="text" disabled name="cod_prod">
+                        <input class="form-control w-25" type="text" disabled name="cod_cli">
                         <br>
                         <label>Nome do Cliente:</label>
-                        <input class="form-control" type="text" name="nome_prod">
+                        <input required class="form-control" type="text" name="nome_cli">
                         <br>
                         <label>CPF:</label>
-                        <input class="form-control" type="number" name="qnt_prod">
+                        <input requiried class="form-control" type="number" name="cpf_cli">
                         <br>
                         <label>E-mail:</label>
-                        <input class="form-control" type="text" name="qnt_prod">
+                        <input class="form-control" type="text" name="email_cli">
                         <br>
                         <label>Telefone:</label>
-                        <input class="form-control" type="text" name="qnt_prod">
+                        <input class="form-control" type="text" name="tel_cli">
                     </div>
                 </form>
             </div>
