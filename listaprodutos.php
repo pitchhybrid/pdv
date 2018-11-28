@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
 <?php
-include('./mock.php');
 include('./tema/tema.php');
-cabecalho('Clientes');
+cabecalho("Cadastro Produto");
 ?>
 </head>
 <body class="bg-muted">
-    <?php
-    navbar();
-    tabela();
-    ?>
+<?php navbar(); 
+?>
+
+    
 </body>
+<footer>
 <?php
 rodape();
 ?>
+</footer>
 </html>

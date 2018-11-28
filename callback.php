@@ -1,6 +1,6 @@
 <?php
-include('./mock.php');
-
+$loginMock ="admin";
+$passMock = "admin";
 verificar_login($_POST['user'],$_POST['pass']);
 
 function verificar_login($l,$p){

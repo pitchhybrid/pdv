@@ -16,9 +16,9 @@ function cabecalho($titulo){
 
 function rodape(){
     ?>
-    <script src="./tema/js/bootstrap.js"></script>
-    <script src="./tema/jquery-3.3.1.js"></script>
+    <script src="./tema/jquery.js"></script>
     <script src="./tema/popper.js"></script>
+    <script src="./tema/js/bootstrap.js"></script>
     <script src="./tema/index.js"></script>
     <?php
 }

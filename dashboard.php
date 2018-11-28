@@ -3,7 +3,6 @@
     <head>
         <?php
         include('./tema/tema.php');
-        include('./mock.php');
         cabecalho('Dashboard');
         ?>
     </head>
@@ -17,7 +16,7 @@
             <p class="display-4" style="font-size:1rem;">
             Clientes 
             </p>
-            <?php echo count($alunos); ?>
+
             </div>
             </a>
         </div>
