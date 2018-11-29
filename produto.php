@@ -3,7 +3,6 @@
 <head>
    <?php
    include("./tema/tema.php");
-   include('./select.php');
    cabecalho("Produtos");
    ?>
 </head>
@@ -70,7 +69,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Cadastro Produtos</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Lista de Produtos</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -78,7 +77,30 @@
                     <div class="modal-body">
                         <div class="card">
                             <?php
-                            sel('clientes');
+                            include('./handler.php');
+
+                            $data = $dbh->prepare("SELECT * FROM produtos");
+                            $data->execute();
+
+                            $colunas = $dbh->prepare("select count(*) from information_schema.columns Where Table_Name='produtos'");
+                            $colunas->execute();
+
+                            $num = $colunas->fetch(PDO::FETCH_NUM);
+                            echo "<table class=\"table table-striped\">";
+                            while($row = $data->fetch(PDO::FETCH_NUM)){
+
+                                echo"<tr>";
+                                for ($i=0; $i <$num[0] ; $i++) {
+
+                                    echo(utf8_encode( "<td>".$row[$i]."</td>"));
+                                }
+                                echo"</tr>";
+                            }
+                            echo "</table>";
+
+
+                            $data = NULL;
+                            $colunas = NULL;
                             ?>
                         </div>
                     </div>
