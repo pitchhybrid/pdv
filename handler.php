@@ -1,6 +1,7 @@
 <?php
 $user = 'root';
 $pass ='';
+
 try {
 $dbh = new PDO('mysql:host=localhost;dbname=pdv', $user, $pass, array(
     PDO::ATTR_PERSISTENT => true
@@ -9,4 +10,3 @@ $dbh = new PDO('mysql:host=localhost;dbname=pdv', $user, $pass, array(
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
-?>
