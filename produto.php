@@ -44,13 +44,13 @@
                     </div>
                     <div class="modal-body">
                         <div class="card">
-                            <form action="#" method="POST">
+                            <form action="produto.php" method="POST">
                                 <div class="form-group">
                                     <label>Nome de Produto:</label>
                                     <input required class="form-control" type="text" name="nome_prod">
                                     <br>
                                     <label>Preço:</label>
-                                    <input required class="form-control" type="number" name="preco_prod">                            
+                                    <input required class="form-control" type="number" name="preco_prod">
                                     <br>
                                     <label>Código:</label>
                                     <input class="form-control" disabled type="text" name="cod_prod">
@@ -89,15 +89,10 @@
                     <div class="modal-body">
                         <div class="card">
                             <?php
-                       //     include('./handler.php');
 
                             $data = $dbh->prepare("SELECT * FROM produtos");
                             $data->execute();
 
-                         //   $colunas = $dbh->prepare("select count(*) from information_schema.columns Where Table_Name='produtos'");
-                         //   $colunas->execute();
-
-                          //  $num = $colunas->fetch(PDO::FETCH_NUM);
                             echo "<table class=\"table table-striped\">";
                             while($row = $data->fetch(PDO::FETCH_NUM)){
 
@@ -119,7 +114,7 @@
                 </div>
             </div>
         </div>
-    
+
 
 </body>
 <?php
