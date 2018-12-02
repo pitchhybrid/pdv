@@ -3,6 +3,7 @@
 <head>
    <?php
    include("./tema/tema.php");
+   include('./handler.php');
    cabecalho("Produtos");
    ?>
 </head>
@@ -43,16 +44,16 @@
                     </div>
                     <div class="modal-body">
                         <div class="card">
-                            <form action="#" method="post">
+                            <form action="#" method="POST">
                                 <div class="form-group">
                                     <label>Nome de Produto:</label>
-                                    <input class="form-control" type="text" id="nome_prod">
+                                    <input required class="form-control" type="text" name="nome_prod">
                                     <br>
-                                    <label>Quantidade:</label>
-                                    <input class="form-control" type="number" id="qnt_prod">
+                                    <label>Preço:</label>
+                                    <input required class="form-control" type="number" name="preco_prod">                            
                                     <br>
                                     <label>Código:</label>
-                                    <input class="form-control" type="text" id="cod_prod">
+                                    <input class="form-control" disabled type="text" name="cod_prod">
                                 </div>
                                     <div class="modal-footer">
                                     <button class="btn btn-primary" id="btn-cad-prod">Cadastrar</button>
@@ -63,6 +64,17 @@
                 </div>
             </div>
         </div>
+
+<?php
+        $stmt = $dbh->prepare("INSERT INTO produtos(nome,preco) VALUES (?, ?)");
+        $stmt->bindParam(1, $_POST['nome_prod'],PDO::PARAM_STR);
+        $stmt->bindParam(2, $_POST['preco_prod'],PDO::PARAM_STR);
+        $stmt->execute();
+        $stmt = NULL;
+?>
+
+
+
 
          <!-- ModalLista -->
          <div class="modal fade" id="ModalLista" role="dialog">
@@ -77,20 +89,20 @@
                     <div class="modal-body">
                         <div class="card">
                             <?php
-                            include('./handler.php');
+                       //     include('./handler.php');
 
                             $data = $dbh->prepare("SELECT * FROM produtos");
                             $data->execute();
 
-                            $colunas = $dbh->prepare("select count(*) from information_schema.columns Where Table_Name='produtos'");
-                            $colunas->execute();
+                         //   $colunas = $dbh->prepare("select count(*) from information_schema.columns Where Table_Name='produtos'");
+                         //   $colunas->execute();
 
-                            $num = $colunas->fetch(PDO::FETCH_NUM);
+                          //  $num = $colunas->fetch(PDO::FETCH_NUM);
                             echo "<table class=\"table table-striped\">";
                             while($row = $data->fetch(PDO::FETCH_NUM)){
 
                                 echo"<tr>";
-                                for ($i=0; $i <$num[0] ; $i++) {
+                                for ($i=0; $i < 3 ; $i++) {
 
                                     echo(utf8_encode( "<td>".$row[$i]."</td>"));
                                 }
